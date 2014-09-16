@@ -1,0 +1,98 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle($this->translate('zeomatics inc.'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            ->prependFile($this->basePath() . '/js/jquery.min.js')
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><h2><?php echo sprintf($this->translate('%szeomatics Inc.%s'), '<span class="green" style="font-weight:bold">', '</span>') ?></h2></a>
+                    <!--<a class="navbar-brand" href="<?php // echo $this->url('home') ?>"><img src="<?php // echo $this->basePath('img/zeomatics-logo.png') ?>" alt=""/>&nbsp;<?php // echo $this->translate('zeomatics Inc.') ?></a>-->
+                </div>
+                <div id="nav-menu">
+                    <div class="collapse navbar-collapse">
+                    <?php echo $this->navigation('Navigation')->menu()->setUlClass('nav navbar-nav'); ?>
+                    </div>
+                    <!--<div class="collapse navbar-collapse">
+                        <?php // <-- Update this !!
+                    //    echo $this->navigation('navigation')
+                    //              ->menu()
+                    //              ->setMinDepth(0)
+                    //              ->setMaxDepth(0)
+                    //              ->setUlClass('nav navbar-nav');
+                        ?>
+                    </div>-->
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <?php echo $this->content; ?>
+        </div> <!-- /container -->
+        
+        
+        <footer>
+            <!--<div class="widget-area">-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                      <div class="widget">
+                        <h3 class="widget-title nudista-16">About Us</h3>
+                        <p class="nudista-18">We’re experienced guides, strategic thinkers, design doers, and expert jugglers.</p>
+                        <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/about/">Learn More <i class="icon-btn"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="widget">
+                        <h3 class="widget-title nudista-16">Our Work</h3>
+                        <p class="nudista-18">We make great experiences happen across touchpoints, businesses, and industries.</p>
+                        <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See Our Work <i class="icon-btn" style="right: 18px;"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <div class="widget">
+                        <h3 class="widget-title nudista-16">Connect</h3>
+                        <p style="margin-bottom: 15px;" class="nudista-18">We’d love to hear from (and about) you. Let’s meet and tweet.</p>
+                        <p style="margin-bottom: 25px; font-size: 16px;" class="nudista-18">
+                          +415 495-8270
+                        </p>
+                        <style>
+                          .site-footer #social-links { margin-top: 30px; }
+                        </style>
+                        <ul id="social-links"><li class="twitter"><a target="_blank" href="https://twitter.com/AdaptivePath" onclick="_gaq.push(['_trackEvent', 'Footer', 'Twitter Social Link', 'Click']);">Twitter</a></li><li class="linkedin"><a target="_blank" href="http://www.linkedin.com/company/adaptive-path" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);">LinkedIn</a></li></ul>            </div>
+                    </div>
+                  </div>
+                    <p>&copy; <?php echo date('Y') ?> by Zeomatics Inc. <?php echo $this->translate('All rights reserved.') ?></p>
+                </div>
+            <!--</div>-->
+        </footer>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
