@@ -70,13 +70,16 @@ div.container a.brand {
     font-weight: normal;
     font-style: normal;
 }
+#body-container{
+    min-height: 500px;
+}
 body {
     background-color: #eee;
     /*color: #2c3133;*/
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     /*line-height: 1.42857;*/    
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     overflow-x: hidden;
 }
 .darkbackground{
@@ -102,8 +105,25 @@ body {
     margin: 1.5em 0 1em;
     /*text-align: center;*/
 }
+.jumbotext2{
+    font-family: "procionoregular", "fertigo_proregular", Times New Roman;
+    margin: 0 0 1em;
+    /*text-align: center;*/
+}
+.jumbotext3{
+    font-family: "procionoregular", "fertigo_proregular", Times New Roman;
+    margin: 1em 0 1em;
+    /*text-align: center;*/
+}
 .navbar{
     /*min-height: 40px;*/
+    padding-top: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 666666;
 }
 .navbar-fixed-top {
     border-width: 0;
@@ -111,10 +131,26 @@ body {
 .navbar-fixed-top .container{
     border-bottom: 1px outset #666;    
 }
+.bxslider{
+    border: 0;
+}
+
+.section-title {
+    color: #666;
+    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
+    /*font-family: "nudista-web","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 20px;
+    line-height: 0.6;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+}
+
+
+
 .container{
     /*width: 100%;*/
-    border-width: 1px;
-    border-color: #fff;
+/*    border-width: 1px;
+    border-color: #fff;*/
 }
 .container .jumbotron{
     /*width: 100%;*/
@@ -157,15 +193,16 @@ body {
 
 #nav-menu{
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
-    font-size: 24px;
+    /*font-size: 20px;*/
     /*line-height: 1.42857;*/
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     float: right;
     /*clear: both;*/
 /*    display: inline-block;
     position: relative;*/
     /*color: red;*/
     /*background-color: blue;*/
+    text-transform: uppercase;
 }
 #nav-menu ul{
     display: center;
@@ -177,7 +214,7 @@ footer{
     background-color: #222;
     position: absolute;
     width: 100%;
-    padding: 3em 2em;
+    padding: 1em;
 }
 footer .widget-area{
 }
@@ -190,6 +227,63 @@ footer .container{
     /*background-color: #222;*/
 }
 
+/*For shrinking the menu bar*/
+/*body {
+  padding-top: 50px;
+}
+
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+*/
+nav a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    font-family: Arial;
+    /*font-size: 40px;*/
+    margin-bottom: 20px;
+    font-weight:bold;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+nav.navbar.shrink {
+    min-height: 15px;
+    padding-top: 0px;
+}
+
+
+nav.shrink a {
+/*  padding-top: 10px !important;
+  padding-bottom: 10px !important;*/
+  font-size: 17px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -198,43 +292,115 @@ footer .container{
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-	.jumbotext{
-    font-size: 30px;
-    line-height: 36px;
-    /*text-align: center;*/
-	}    
+    .jumbotext{
+        font-size: 30px;
+        line-height: 36px;
+        /*text-align: center;*/
+    }    
+    .jumbotext2{
+        font-size: 24px;
+        line-height: 30px;
+        /*text-align: center;*/
+    }    
+    .jumbotext3{
+        font-size: 24px;
+        line-height: 30px;
+        /*text-align: center;*/
+    }    
+    .navbar-brand{
+        font-size: 24px;
+    }
+    nav a{
+        font-size: 10px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-	.jumbotext{
-		font-size: 40px;
-		line-height: 46px;
-	}
+    .jumbotext{
+            font-size: 40px;
+            line-height: 46px;
+    }
+    .jumbotext2{
+            font-size: 34px;
+            line-height: 40px;
+    }
+    .jumbotext3{
+            font-size: 32px;
+            line-height: 38px;
+    }
+    .navbar-brand{
+        font-size: 25px;
+    }
+    nav a{
+        font-size: 12px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.jumbotext{
-		font-size: 50px;
-		line-height: 56px;
-	}
+    .jumbotext{
+            font-size: 50px;
+            line-height: 56px;
+    }
+    .jumbotext2{
+            font-size: 44px;
+            line-height: 50px;
+    }
+    .jumbotext3{
+            font-size: 40px;
+            line-height: 46px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
+    nav a{
+        font-size: 14px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.jumbotext{
-		font-size: 60px;
-		line-height: 66px;
-		}
+    .jumbotext{
+        font-size: 60px;
+        line-height: 66px;
+    }
+    .jumbotext2{
+        font-size: 54px;
+        line-height: 60px;
+    }
+    .jumbotext3{
+        font-size: 50px;
+        line-height: 56px;
+    }
+    .navbar-brand{
+        font-size: 35px;
+    }
+    nav a{
+        font-size: 16px;
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	.jumbotext{
-		font-size: 80px;
-		line-height: 76px;
-	}
+    .jumbotext{
+            font-size: 74px;
+            line-height: 80px;
+    }
+    .jumbotext2{
+            font-size: 68px;
+            line-height: 74px;
+    }
+    .jumbotext3{
+            font-size: 60px;
+            line-height: 66px;
+    }
+    .navbar-brand{
+        font-size: 40px;
+    }
+    nav a{
+        font-size: 18px;
+    }
 }
 
 

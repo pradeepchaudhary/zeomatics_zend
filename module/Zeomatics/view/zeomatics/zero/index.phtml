@@ -1,57 +1,71 @@
 <!--<h1>Zeomatics Index Page</h1>-->
+
+<?php 
+$this->headScript()->appendFile($this->basePath('js/jquery.bxslider.min.js'));
+$this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
+?>
+
 <div class="darkbackground">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext">
-                <?php echo sprintf($this->translate('Great businesses are built on %sgreat experiences%s. We make those experiences happen.'), '<span class="green">', '</span>') ?>
+                <?php // echo sprintf($this->translate('Great businesses are built on %sgreat experiences%s. We make those experiences happen.'), '<span class="green">', '</span>') ?>
+                <?php echo sprintf($this->translate('The organization dedicated to provide %sworld class solutions%s to world class problems.'), '<span class="green">', '</span>') ?>
             </div>
         </div>
     </div>
 </div>
-<div class="row">
-    <img class="img-responsive" src="img/Home_Carousel_1_new-1441x720.jpg">
+<div class="row" id="menu-shrink-mark">
+    <ul class="bxslider">
+        <li><img src="img/pic1.jpg" /></li>
+        <li><img src="img/pic2.jpg" /></li>
+        <li><img src="img/pic3.jpg" /></li>
+    </ul>
 </div>
+<!--<div class="row">
+    <img class="img-responsive" src="img/Home_Carousel_1_new-1441x720.jpg">
+</div>-->
 <!--<div class="darkbackground">-->
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">SERVICES</h2>
-            <div class="jumbotext">
+            <div class="jumbotext2">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
-                <?php echo sprintf($this->translate('We help you map and make meaningful connections with your customers.')) ?>
-                <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
+                <?php echo sprintf($this->translate('We provide the ability to visualize important issues on a map.')) ?>
+                <a class="btn btn-success btn-lg" href="zero/services">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
                 </p>
             </div>
         </div>
     </div>
-	<div class="row">
+    <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">WE'RE EXPERTS IN</h2><br/>
+            <h2 class="section-title">WE'RE EXPERTS IN</h2>
             <div class="col-xs-3">
-				<img class="img-rounded img-responsive" src="img/rubiks_mirror_cube.jpg" alt="services image 1">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-rounded img-responsive" src="img/close-up-grayscale_00428542.jpg">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-rounded img-responsive" src="img/grayscale-screen.jpg">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-rounded img-responsive" src="img/grayscale_cup.jpg">
-			</div>
+                    <img class="img-rounded img-responsive" src="img/rubiks_mirror_cube.jpg" alt="services image 1">
+            </div>
+            <div class="col-xs-3">
+                    <img class="img-rounded img-responsive" src="img/close-up-grayscale_00428542.jpg">
+            </div>
+            <div class="col-xs-3">
+                    <img class="img-rounded img-responsive" src="img/grayscale-screen.jpg">
+            </div>
+            <div class="col-xs-3">
+                    <img class="img-rounded img-responsive" src="img/grayscale_cup.jpg">
+            </div>
         </div>
     </div>
-	<br/>
+<br/>
 <!--</div>-->
-<div class="whitebackground">
+<div class="whitebackground"><br/>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">TECHNOLOGY</h2>
-            <div class="jumbotext">
+            <div class="jumbotext2">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('We help you map and make meaningful connections with your customers.')) ?>
-                <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
+                <a class="btn btn-success btn-lg" href="http://www.zeomatics.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
                 </p>
             </div>
         </div>
@@ -75,15 +89,15 @@
     </div>
 	<br/>
 </div>
-<div class="graybackground">
+<div class="graybackground"><br/>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">ABOUT</h2>
-            <div class="jumbotext">
+            <div class="jumbotext2">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('We help you map and make meaningful connections with your customers.')) ?>
-                <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
+                <a class="btn btn-success btn-lg" href="http://www.zeomatics.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
                 </p>
             </div>
         </div>
@@ -118,14 +132,14 @@
 <br/>
 </div>
 <!--<div class="darkbackground">-->
-    <div class="row">
+    <div class="row"><br/>
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">PORTFOLIO</h2>
-            <div class="jumbotext">
+            <div class="jumbotext2">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('We help you map and make meaningful connections with your customers.')) ?>
-                <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
+                <a class="btn btn-success btn-lg" href="http://www.zeomatics.com/consulting/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a>
                 </p>
             </div>
         </div>
@@ -152,7 +166,7 @@
 <div class="greenbackground">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <div class="jumbotext">
+            <div class="jumbotext3">
                 <?php echo sprintf($this->translate('How might we help you?')) ?>
                 <a class="btn btn-default btn-lg" href="zero/contact/">GET IN TOUCH <i class="icon-btn" style="right: 18px;"></i></a>
             </div>
@@ -160,7 +174,12 @@
     </div>
 </div>
 
-
-
-
-
+<script type="text/javascript">
+    //For sliding images in the head slider
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+//            auto: true,
+//            autoControls: true
+          });
+    });
+</script>

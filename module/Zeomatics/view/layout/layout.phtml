@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><h2><?php echo sprintf($this->translate('%szeomatics Inc.%s'), '<span class="green" style="font-weight:bold">', '</span>') ?></h2></a>
+                    <a class="navbar-brand" href="<?php echo $this->url('zero') ?>"><?php echo sprintf($this->translate('%szeomatics Inc.%s'), '<span class="green">', '</span>') ?></a>
                     <!--<a class="navbar-brand" href="<?php // echo $this->url('home') ?>"><img src="<?php // echo $this->basePath('img/zeomatics-logo.png') ?>" alt=""/>&nbsp;<?php // echo $this->translate('zeomatics Inc.') ?></a>-->
                 </div>
                 <div id="nav-menu">
@@ -53,28 +53,27 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
+        <div class="container-fluid" id="body-container">
             <?php echo $this->content; ?>
         </div> <!-- /container -->
         
-        
-        <footer>
-            <!--<div class="widget-area">-->
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4 col-xs-12">
-                      <div class="widget">
-                        <h3 class="widget-title nudista-16">About Us</h3>
-                        <p class="nudista-18">We’re experienced guides, strategic thinkers, design doers, and expert jugglers.</p>
-                        <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/about/">Learn More <i class="icon-btn"></i></a>
-                      </div>
-                    </div>
+        <div class="container-fluid">
+            <div class="graybackground">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="widget">
+                                <h3 class="widget-title nudista-16">About Us</h3>
+                                <p class="nudista-18">We’re experienced guides, strategic thinkers, design doers, and expert jugglers.</p>
+                                <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/about/">Learn More <i class="icon-btn"></i></a>
+                            </div>
+                        </div>
                     <div class="col-md-4 col-xs-12">
                       <div class="widget">
                         <h3 class="widget-title nudista-16">Our Work</h3>
                         <p class="nudista-18">We make great experiences happen across touchpoints, businesses, and industries.</p>
                         <a class="btn btn-success btn-lg" href="http://www.adaptivepath.com/consulting/">See Our Work <i class="icon-btn" style="right: 18px;"></i></a>
-                      </div>
+                    </div>
                     </div>
                     <div class="col-md-4 col-xs-12">
                       <div class="widget">
@@ -88,11 +87,42 @@
                         </style>
                         <ul id="social-links"><li class="twitter"><a target="_blank" href="https://twitter.com/AdaptivePath" onclick="_gaq.push(['_trackEvent', 'Footer', 'Twitter Social Link', 'Click']);">Twitter</a></li><li class="linkedin"><a target="_blank" href="http://www.linkedin.com/company/adaptive-path" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);">LinkedIn</a></li></ul>            </div>
                     </div>
-                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <!--<div class="widget-area">-->
+                <div class="container">
                     <p>&copy; <?php echo date('Y') ?> by Zeomatics Inc. <?php echo $this->translate('All rights reserved.') ?></p>
                 </div>
             <!--</div>-->
         </footer>
         <?php echo $this->inlineScript() ?>
+        <script>
+            //For shrinking the menu bar on scroll along with the bottom border of navbar
+//            $(window).scroll(function() {
+//              if ($(document).scrollTop() > 414) {
+//                $('nav').addClass('shrink');
+//                $('.navbar-fixed-top .container').css( "border-bottom", "1px" );
+//              } else {
+//                $('nav').removeClass('shrink');
+//                $('.navbar-fixed-top .container').css( "border-bottom", "" );
+//              }
+//            });
+            $(document).ready(function(){
+                $(window).scroll(function() {
+                    var check = $('#menu-shrink-mark').position();
+                    if ($(document).scrollTop() > check.top-90) {
+                            $('nav').addClass('shrink');
+                            $('.navbar-fixed-top .container').css( "border-bottom", "1px" );
+                          } else {
+                            $('nav').removeClass('shrink');
+                            $('.navbar-fixed-top .container').css( "border-bottom", "" );
+                          }
+                });
+            });
+        </script>
     </body>
 </html>
