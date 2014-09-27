@@ -227,15 +227,15 @@ nav .navbar-toggle {
 #expertise_info p{
     margin-top: 20px;
 }
-#mapping_adv{
+.mapping_adv{
     margin-bottom: 30px;
 }
-#mapping_adv p{
+.mapping_adv p{
     /*font-size: 28px ;*/
     margin-bottom: 20px;
     color: #444;
 }
-#mapping_adv span{
+.mapping_adv span{
     color: green;
 }
 #geospatial{
