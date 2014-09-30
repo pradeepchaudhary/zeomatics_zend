@@ -299,13 +299,13 @@ footer{
 #mail:hover{
     color: #111;
 }
-#social-links a{
+.social-links a{
     font-size: smaller;
 /*    color: green;*/
     text-decoration: none;
     text-transform: uppercase;
 }
-#social-links a:hover{
+.social-links a:hover{
     color: #111;
 }
 .map{

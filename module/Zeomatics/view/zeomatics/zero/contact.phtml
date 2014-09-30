@@ -53,11 +53,11 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 </p>
                 <p><i class="fa fa-clock-o"></i> 
                     <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
-                <div id="social-links">
-                    <a class="page_color" target="_blank" href="http://www.twitter.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'Twitter Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/Twitter.png" width=30px;> Twitter</a>
-                    <a class="page_color" target="_blank" href="http://www.linkedin.com/company/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/LinkedIn.png" width=30px;> LinkedIn</a>
-                    <a class="page_color" target="_blank" href="http://www.facebook.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/Facebook.png" width=30px;> Facebook</a>
-                </div> 
+                <div class="social-links">
+                    <a class="page_color" target="_blank" href="http://www.twitter.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'Twitter Social Link', 'Click']);"><img src="<?php echo $this->basePath('img/widget-icons/Twitter.png'); ?>" width=30px;> Twitter</a>
+                    <a class="page_color" target="_blank" href="http://www.linkedin.com/company/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="<?php echo $this->basePath('img/widget-icons/LinkedIn.png'); ?>" width=30px;> LinkedIn</a>
+                    <a class="page_color" target="_blank" href="http://www.facebook.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="<?php echo $this->basePath('img/widget-icons/Facebook.png'); ?>" width=30px;> Facebook</a>
+                </div>
 <!--                <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
