@@ -4,13 +4,22 @@
 $this->headScript()->appendFile($this->basePath('js/jquery.bxslider.min.js'));
 $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
 ?>
-
+<style>
+    .page_color{
+        color:green;
+    }
+    .page_background{
+        background-color: green;
+        color: #eee;
+    }
+</style>
 <div class="darkbackground">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext">
                 <?php // echo sprintf($this->translate('Great businesses are built on %sgreat experiences%s. We make those experiences happen.'), '<span class="green">', '</span>') ?>
-                <?php echo sprintf($this->translate('The organization dedicated to provide %sworld class solutions%s to world class problems.'), '<span class="green">', '</span>') ?>
+                <?php echo sprintf($this->translate('The organization dedicated to provide %sworld class solutions%s to world class problems.'), '<span class="page_color">', '</span>') ?>
+                <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
             </div>
         </div>
     </div>
@@ -26,7 +35,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <img class="img-responsive" src="img/Home_Carousel_1_new-1441x720.jpg">
 </div>-->
 <!--<div class="darkbackground">-->
-    <div class="row">
+<div class="row" id="content">
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">SERVICES</h2>
             <div class="jumbotext2">
@@ -34,7 +43,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <p>
                 <?php // echo sprintf($this->translate('The ability to visualize important issues on a map. We help in better decision making.')) ?>
                 <?php echo sprintf($this->translate('We provide the ability to visualize and analyze your issues on a map.')) ?>
-                <a class="btn btn-success btn-lg" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-success btn-lg page_background" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
@@ -44,19 +53,19 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <h2 class="section-title">The Power of Mapping</h2><br/>
             <div class="font-24">
                 <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right"></span>  Cost Savings from Greater Efficiency</p>
+                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Cost Savings from Greater Efficiency</p>
                 </div>
                 <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right"></span>  Better Decision Making</p>
+                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Decision Making</p>
                 </div>
                 <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right"></span>  Improved Communication</p>
+                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Improved Communication</p>
                 </div>
                 <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right"></span>  Managing Geographically</p>
+                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Managing Geographically</p>
                 </div>
                 <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right"></span>  Better Record Keeping</p>
+                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Record Keeping</p>
                 </div>
             </div>
         </div>
@@ -73,7 +82,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('Why settle for good when you can have the best?')) ?>
-                    <a class="btn btn-success btn-lg" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>
+                    <a class="btn btn-success btn-lg page_background" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
@@ -109,7 +118,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <p>
                 <?php // echo sprintf($this->translate('We\'re passionate just like you. Together we can transform our world.')) ?>
                 <?php echo sprintf($this->translate('New Strategies for New Times.')) ?>
-                <a class="btn btn-success btn-lg" href="zero/portfolio">View our strategy <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-success btn-lg page_background" href="zero/portfolio">View our strategy <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
@@ -173,7 +182,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <div class="row" id="geospatial">
         <div class="col-xs-10 col-xs-offset-1">
             <p class="font-54"><?php echo sprintf($this->translate('Geospatial technologies for sustainable economic and social development')) ?>
-                <a class="btn btn-success btn-lg" href="zero/">a future guideline  <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-success btn-lg page_background" href="zero/">a future guideline  <span class="glyphicon glyphicon-play"></span></a>
             </p>
         </div>
     </div>
@@ -188,7 +197,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <p style="text-align: center; text-transform: uppercase; font-size: smaller;">
             <?php // echo sprintf($this->translate('Overcome the challenges of your business by applying new strategies.')) ?>
             <?php echo sprintf($this->translate('Give your work a solid foundation.')) ?>
-            <!--<a class="btn btn-success btn-lg" href="zero/portfolio">See how we work  <span class="glyphicon glyphicon-play"></span></a>-->
+            <!--<a class="btn btn-success btn-lg page_background" href="zero/portfolio">See how we work  <span class="glyphicon glyphicon-play"></span></a>-->
             </p>
         </div>
     </div>
@@ -199,52 +208,52 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         <h2 class="section-title">We've got something for everybody</h2><br/>
         <div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Transportation</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Transportation</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Public Safety</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Public Safety</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Defense</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Defense</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Business/Commercial</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Business/Commercial</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Environmental Management</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Environmental Management</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Facilities Management</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Facilities Management</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Geodesign</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Geodesign</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Government</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Government</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Health & Human Services</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Health & Human Services</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Land Administration & Cadastre</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Land Administration & Cadastre</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Map, Chart, and Data Production</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Map, Chart, and Data Production</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Natural Resources</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Natural Resources</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Utilities and Communications</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Utilities and Communications</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right"></span>  Spatial Data Infrastructure</p>
+                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Spatial Data Infrastructure</p>
             </div>
         </div>
     </div>
 </div>
 <br/>
-<div class="greenbackground">
+<div class="page_background">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext3">

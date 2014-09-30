@@ -1,0 +1,129 @@
+<?php 
+$this->headScript()->appendFile($this->basePath('js/jquery.bxslider.min.js'));
+$this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
+?>
+
+<style>
+    .page_color{
+        /*color: #d93600;*/
+        color: #00b5e1;
+    }
+    .page_background{
+        background-color: #00b5e1;
+        color: #eee;
+    }
+</style>
+<div class="darkbackground">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="jumbotext">
+                <?php echo sprintf($this->translate('We love %sconversations%s. Tell us %swhatever%s you like.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
+                <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" id="menu-shrink-mark">
+    <ul class="bxslider">
+        <li><img src="../img/pic3.jpg" /></li>
+        <li><img src="../img/pic1.jpg" /></li>
+        <li><img src="../img/pic2.jpg" /></li>
+    </ul>
+</div>
+<div class="">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+                    <!-- Content Row -->
+        <div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <iframe class="map" width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=28.640009, 77.180427&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-md-4">
+                <h3 class="section-title">Contact Details</h3>
+                <p>
+                    12/53 Rajendra Nagar<br>New Delhi, Delhi 110060<br>
+                </p>
+                <p><i class="fa fa-phone"></i> 
+                    <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+                <p><i class="fa fa-envelope-o"></i> 
+                    <abbr title="Email">E</abbr>: <a class="page_color" href="mailto:connect@zeomatics.com">connect@zeomatics.com</a>
+                </p>
+                <p><i class="fa fa-clock-o"></i> 
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <div id="social-links">
+                    <a class="page_color" target="_blank" href="http://www.twitter.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'Twitter Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/Twitter.png" width=30px;> Twitter</a>
+                    <a class="page_color" target="_blank" href="http://www.linkedin.com/company/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/LinkedIn.png" width=30px;> LinkedIn</a>
+                    <a class="page_color" target="_blank" href="http://www.facebook.com/zeomatics" onclick="_gaq.push(['_trackEvent', 'Footer', 'LinkedIn Social Link', 'Click']);"><img src="/zeomatics_zend/public/img/widget-icons/Facebook.png" width=30px;> Facebook</a>
+                </div> 
+<!--                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row"><br/>
+            <div class="col-md-8">
+                <h3 class="section-title">Send us a Message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div><br/>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-success btn-lg page_background">Send Message  <span class="glyphicon glyphicon-play"></button>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        </div>
+    </div>
+</div>
+<br/><br/><br/><br/>
+
+
+<script type="text/javascript">
+    //For sliding images in the head slider
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    });
+</script>

@@ -23,6 +23,15 @@ use Zeomatics\Form\DataForm;
      public function technologyAction(){
 
     }
+     public function aboutAction(){
+
+    }
+     public function portfolioAction(){
+
+    }
+     public function contactAction(){
+
+    }
      public function newuserAction(){
         $mapper = $this->getDataMapper();
         return new ViewModel(array('users' => $mapper->fetchAll()));

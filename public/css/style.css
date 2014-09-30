@@ -86,6 +86,14 @@ body {
     /*margin-top: 30px;*/
     overflow-x: hidden;
 }
+/*default values for page color and background*/
+    .page_color{
+        color:green;
+    }
+    .page_background{
+        background-color: green;
+        color: #eee;
+    }
 .btn{
     text-transform: uppercase;
 }
@@ -93,10 +101,10 @@ body {
     background-color: #222;
     color: #ccc;
 }
-.greenbackground{
+/*.greenbackground{
     background-color: green;
     color: #ccc;
-}
+}*/
 .whitebackground{
 	background-color: white;
 	color: #333;
@@ -147,9 +155,24 @@ body {
     color: #eee;
 }
 .btn-success{
-    background-color: green;
+    /*background-color: green;*/
     background-image: none;
     border: none;
+}
+.btn-success span{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-success span:hover{
+    padding-left: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .btn-success:hover{
     background-color: #111;
@@ -157,21 +180,8 @@ body {
 
 #nav-menu{
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
-    /*font-size: 20px;*/
-    /*line-height: 1.42857;*/
-    /*margin-top: 20px;*/
     float: right;
-    /*clear: both;*/
-/*    display: inline-block;
-    position: relative;*/
-    /*color: red;*/
-    /*background-color: blue;*/
     text-transform: uppercase;
-}
-#nav-menu ul{
-    display: center;
-    color: green;
-    /*background-color: red;*/
 }
 footer{
     color: #b2b3b3;
@@ -180,37 +190,50 @@ footer{
     width: 100%;
     padding: 1em;
 }
-footer .widget-area{
-}
-footer .container{
-/*    width: 100%;
-    padding: 1em 2em;*/
-    /*display: block;*/
-    /*background: none repeat scroll 0 0 #2d3135;*/
-    /*padding: 72px 0 106px;*/
-    /*background-color: #222;*/
-}
-
-/*For shrinking the menu bar*/
-/*body {
-  padding-top: 50px;
-}
-
-nav a {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  font-size: 18px;
-}
-
-nav .navbar-toggle {
-  margin: 13px 15px 13px 0;
-}
-*/
 
 .bxslider{
     border: 0;
 }
-
+.skip-icon{
+    color: white;
+    text-align: center;
+    line-height: 2.75em;
+    font-size: 20px;
+    height: 52px;
+    width: 56px;
+/*    background-color: green;*/
+    border-radius: 6px;
+    bottom: -28px;
+    position: absolute;
+    right: 0;
+    /*opacity: 1;*/
+    z-index: 99999;
+    /*display: block;*/
+    /*overflow: hidden;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.skip-icon:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #111;
+    line-height: 3.25em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#content{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
 .section-title {
     color: #666;
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
@@ -235,9 +258,9 @@ nav .navbar-toggle {
     margin-bottom: 20px;
     color: #444;
 }
-.mapping_adv span{
+/*.mapping_adv span{
     color: green;
-}
+}*/
 #geospatial{
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
     /*font-size: 50px;*/
@@ -249,11 +272,11 @@ nav .navbar-toggle {
     padding: 1em 0;
     line-height: 1.1em;
 }
-.green {
+/*.green {
     color: green;
-    /*font-family: 'fertigo_proregular',Helvetica,Arial,sans-serif;*/
-    /*font-weight: bold;*/
-}
+    font-family: 'fertigo_proregular',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}*/
 .widget{
     /*font-family: 'Calibri';*/
 }
@@ -270,7 +293,7 @@ nav .navbar-toggle {
     line-height: 1.25em;
 }
 #mail{
-    color: green;
+/*    color: green;*/
     text-decoration: none;
 }
 #mail:hover{
@@ -278,54 +301,32 @@ nav .navbar-toggle {
 }
 #social-links a{
     font-size: smaller;
-    color: green;
+/*    color: green;*/
     text-decoration: none;
     text-transform: uppercase;
 }
 #social-links a:hover{
     color: #111;
 }
-
-
-
-
-
-
-
-.container{
-    /*width: 100%;*/
-/*    border-width: 1px;
-    border-color: #fff;*/
-}
-.container .jumbotron{
-    /*width: 100%;*/
-    margin-top: 1200px;
-    position: relative;
-}
-.full-width{
-    min-height: 400px;
-    background-color: #222;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    
-    /*z-index: -1;*/
-}
-.full-width .container .jumbotron{
-    /*width: 100%;*/
-    margin-top: 50px;
-    background-color: #222;
-    color: #ccc;
-    /*font-size: 66px;*/
-}
-.full-width .container .jumbotron h1{
-    font-family: "procionoregular", "fertigo_proregular", Times New Roman;
-    font-size: 2.5em;
+.map{
+    text-decoration: none;
 }
 
+/*For shrinking the menu bar*/
+/*body {
+  padding-top: 50px;
+}
 
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+*/
 nav a{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
