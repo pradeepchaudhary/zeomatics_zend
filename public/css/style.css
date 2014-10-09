@@ -96,6 +96,7 @@ body {
     }
 .btn{
     text-transform: uppercase;
+    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
 }
 .darkbackground{
     background-color: #222;
