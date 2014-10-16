@@ -22,15 +22,15 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <?php // echo sprintf($this->translate('Great businesses are built on %sgreat experiences%s. We make those experiences happen.'), '<span class="green">', '</span>') ?>
                 <?php echo sprintf($this->translate('Get solutions for your %stoughest geospatial%s challenges with our determined team.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
             </div>
-            <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            <a id="go_down" class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
         </div>
     </div>
 </div>
 <div class="row" id="menu-shrink-mark">
     <ul class="bxslider">
         <li><img src="<?php echo $this->basePath('img/RenderData_resized.jpg');?>" /></li>
-        <li><img src="<?php echo $this->basePath('img/');?>" /></li>
-        <li><img src="<?php echo $this->basePath('img/');?>" /></li>
+        <li><img src="<?php echo $this->basePath('img/auroraNZ_weir_960high.jpg');?>" /></li>
+        <!--<li><img src="<?php echo $this->basePath('img/');?>" /></li>-->
     </ul>
 </div>
 <!--<div class="row">
@@ -39,35 +39,24 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
 <!--<div class="darkbackground">-->
 <div class="row" id="content">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">SERVICES</h2>
-            <div class="jumbotext2">
+            <h2 class="section-title">about us</h2>
+            <div class="jumbotext3">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php // echo sprintf($this->translate('The ability to visualize important issues on a map. We help in better decision making.')) ?>
-                <?php echo sprintf($this->translate('We provide the ability to visualize and analyze your issues on a map.')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
+                <?php echo sprintf($this->translate('zeomatics Inc. is a dynamic multi-faceted company which provides industry with a variety of solutions.')) ?>
                 </p>
             </div>
         </div>
     </div>
-    <div class="row mapping_adv">
+    <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">The Power of Mapping</h2><br/>
-            <div class="font-24">
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Cost Savings from Greater Efficiency</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Decision Making</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Improved Communication</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Managing Geographically</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Record Keeping</p>
+            <div class="">
+                <div class="col-md-12">
+                    <p>We provide solutions to build a more secure and sustainable future by encouraging a better understanding and appreciation of the world's cultural and ecological diversity. </p>
+                    <p>zeomatics' mission is to provide the expertise and technology needed to research, design and produce high quality cartographic and interactive media and printed products for our public and private sectors, NGOs and government agencies, universities and non-profit partners worldwide.</p>
+                    <p>zeomatics also provides participatory research and consultation services designed to support our project partners in meeting the needs associated with community-based land use, ecological knowledge and cultural heritage mapping and with capacity building related to co-management, sustainable development and geo-spatial and multimedia skills and technology transfer.</p>
+                    <p>The zeomatics team members have a vast background in agriculture, oil and gas, surveying, GIS and remote sensing making zeomatics the complete package.The processing expertise possessed within zeomatics creates the ability to tackle a wide range of applications.</p>
                 </div>
             </div>
         </div>
@@ -79,108 +68,79 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
 <div class="whitebackground"><br/><br/>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">TECHNOLOGY</h2>
-            <div class="jumbotext2">
+            <h2 class="section-title">Our Team</h2>
+            <div class="jumbotext3">
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
-                <?php echo sprintf($this->translate('Why settle for good when you can have the best?')) ?>
-                    <a class="btn btn-success btn-lg page_background" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>
+                <?php echo sprintf($this->translate('The difference between success and failure is a great team. ')) ?>
                 </p>
             </div>
         </div>
     </div>
     <div class="row" id="expertise_info">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">WE'RE EXPERTS IN</h2>
-            <div class="col-xs-6 col-md-3">
-                <img class="img-rounded img-responsive" src="../img/Lotus_Temple2.jpg" alt="services image 1">
-                <p>Monitoring of Land Resources</p>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                    <img class="img-rounded img-responsive" src="../img/saraswati-river.jpg">
-                    <p>Monitoring of Water Resources</p>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                    <img class="img-rounded img-responsive" src="../img/tanjil.jpg">
-                    <p>Space based Land assessment</p>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                    <img class="img-rounded img-responsive" src="../img/classification.jpg">
-                    <p>Space based Classification</p>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Abhishek_Jain.jpg" alt="Mr. Abhishek Jain">
+                        <p><span class="page_color font-24">Abhishek Jain </span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Abhishek_Sachan.jpg" alt="Mr. Abhishek Sachan">
+                        <p><span class="page_color font-24">Abhishek Sachan</span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Avinash_Kumar.jpg" alt="Mr. Avinash Kumar">
+                        <p><span class="page_color font-24">Avinash Kumar </span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Dr._Devanjan_Bhattacharya.jpg" alt="Dr. Devanjan Bhattacharya">
+                        <p><span class="page_color font-24">Devanjan Bhattacharya </span><br> Job Title</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Ravi_Kumar.jpg" alt="Mr. Ravi Kumar">
+                        <p><span class="page_color font-24">Ravi Kumar</span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Santosh_Yadav.jpg" alt="Mr. Santosh Yadav">
+                        <p><span class="page_color font-24">Santosh Yadav</span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Sarat_Chandra.jpg" alt="Mr. Sarat Chandra">
+                        <p><span class="page_color font-24">Sarat Chandra</span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Saurabh_Vijay.jpg" alt="Mr. Saurabh Vijay">
+                        <p><span class="page_color font-24">Saurabh Vijay</span><br> Job Title</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="member">
+                        <img class="img-rounded img-responsive" src="../img/team/Mr._Siddhartha_Khare.jpg" alt="Mr. Siddhartha Khare">
+                        <p><span class="page_color font-24">Siddhartha Khare</span><br> Job Title</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="graybackground"><br/>
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">PORTFOLIO</h2>
-            <div class="jumbotext2">
-                <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
-                <p>
-                <?php // echo sprintf($this->translate('We\'re passionate just like you. Together we can transform our world.')) ?>
-                <?php echo sprintf($this->translate('New Strategies for New Times.')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/portfolio">View our strategy <span class="glyphicon glyphicon-play"></span></a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="experience_info">
-        <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">We've experience in </h2><br/>
-            <div class="row font-24">
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Developing Decision Support Systems
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Analyzing satellite data for various applications
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Site selection and route planning
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Facilities management
-                </p></div>
-            </div>
-            <div class="row font-24">
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Market planning and analytics.
-                </p></div>
-<!--                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Developing Decision Support Systems
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Analyzing satellite data for various applications
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Site selection and route planning
-                </p></div>
-            </div>
-            <div class="row font-24">
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Facilities management
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Market planning and analytics.
-                </p></div>-->
-            </div>
-<!--            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="../img/rubiks_mirror_cube.jpg" alt="services image 1">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="../img/close-up-grayscale_00428542.jpg">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="../img/grayscale-screen.jpg">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="../img/grayscale_cup.jpg">
-            </div>-->
-        </div>
-    </div>
-    <br/>
-</div>
-<div class="darkbackground"><br/>
+
+<!--<div class="darkbackground"><br/>
     <div class="row" id="geospatial">
         <div class="col-xs-10 col-xs-offset-1">
             <p class="font-54"><?php echo sprintf($this->translate('Geospatial technologies for sustainable economic and social development')) ?>
@@ -189,24 +149,24 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         </div>
     </div>
 <br/>
-</div>
-<div class="row"><br/>
+</div>-->
+<!--<div class="row"><br/>
     <div class="col-xs-10 col-xs-offset-1">
-        <h2 class="section-title">Applications</h2>
+        <h2 class="section-title">Careers</h2>
         <img class="img img-responsive" src="../img/GIS_Day_2014_Slider3-2_03.png" style="">
         <div class="jumbotext2">
-            <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
+            <p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>
             <p style="text-align: center; text-transform: uppercase; font-size: smaller;">
             <?php // echo sprintf($this->translate('Overcome the challenges of your business by applying new strategies.')) ?>
             <?php echo sprintf($this->translate('Give your work a solid foundation.')) ?>
-            <!--<a class="btn btn-success btn-lg page_background" href="zero/portfolio">See how we work  <span class="glyphicon glyphicon-play"></span></a>-->
+            <a class="btn btn-success btn-lg page_background" href="zero/portfolio">See how we work  <span class="glyphicon glyphicon-play"></span></a>
             </p>
         </div>
     </div>
 </div>
 <div class="row mapping_adv">
     <div class="col-xs-10 col-xs-offset-1">
-        <!--<h2 class="section-title">Applicable everywhere</h2><br/>-->
+        <h2 class="section-title">Applicable everywhere</h2><br/>
         <h2 class="section-title">We've got something for everybody</h2><br/>
         <div>
             <div class="col-md-6">
@@ -253,8 +213,8 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             </div>
         </div>
     </div>
-</div>
-<br/>
+</div>-->
+<!--<br/>-->
 <div class="page_background">
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">

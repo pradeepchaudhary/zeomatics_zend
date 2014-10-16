@@ -18,9 +18,9 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext">
                 <?php // echo sprintf($this->translate('Great businesses are built on %sgreat experiences%s. We make those experiences happen.'), '<span class="green">', '</span>') ?>
-                <?php echo sprintf($this->translate('The organization dedicated to provide %sworld class solutions%s to world class problems.'), '<span class="page_color">', '</span>') ?>
+                <?php echo sprintf($this->translate('The organization dedicated to provide %sworld class solutions%s to geospatial problems.'), '<span class="page_color">', '</span>') ?>
             </div>
-            <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            <a id="go_down" class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
         </div>
     </div>
 </div>
@@ -42,16 +42,56 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php // echo sprintf($this->translate('The ability to visualize important issues on a map. We help in better decision making.')) ?>
-                <?php echo sprintf($this->translate('We provide the ability to visualize and analyze your issues on a map.')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
+                <?php echo sprintf($this->translate('We provide the ability to visualize and analyze important issues on a map.')) ?>
+                    <a id="down" class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero/services')?>">See how we work  <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
     </div>
     <div class="row mapping_adv">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">The Power of Mapping</h2><br/>
-            <div class="font-24">
+            <h2 class="section-title">Experience the Power of Mapping in</h2><br/>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-1 col-sm-offset-1 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/agriculture-1-130px.png');?>"/>
+                    <p>Agriculture</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/engineering-1-130px.png');?>"/>
+                    <p>Engineering</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/inspections-1-130px.png');?>"/>
+                    <p>Inspections</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/forestry-1-130px.png');?>"/>
+                    <p>Forestry</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/oil-gas-1-130px.png');?>"/>
+                    <p>Oil & Gas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-2 col-sm-offset-2 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/environmental-1-130px.png');?>"/>
+                    <p>Environmental Monitoring</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/aerial-imagery-1-130px.png');?>"/>
+                    <p>GIS & Mapping</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/image-processing-1-130px.png');?>"/>
+                    <p>Image Processing</p>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/volumetrics-1-130px.png');?>"/>
+                    <p>Mining</p>
+                </div>
+            </div>
+<!--            <div class="font-24">
                 <div class="col-md-6">
                     <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Cost Savings from Greater Efficiency</p>
                 </div>
@@ -67,7 +107,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <div class="col-md-6">
                     <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Record Keeping</p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 	<br/>
@@ -82,7 +122,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('Why settle for good when you can have the best?')) ?>
-                    <a class="btn btn-success btn-lg page_background" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>
+                    <a class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero/technology')?>">View Technology <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
@@ -118,7 +158,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <p>
                 <?php // echo sprintf($this->translate('We\'re passionate just like you. Together we can transform our world.')) ?>
                 <?php echo sprintf($this->translate('New Strategies for New Times.')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/portfolio">View our strategy <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero/portfolio');?>">View our work <span class="glyphicon glyphicon-play"></span></a>
                 </p>
             </div>
         </div>
@@ -144,36 +184,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <div class="col-md-3 col-sm-6 col-xs-12"><p>
                     Market planning and analytics.
                 </p></div>
-<!--                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Developing Decision Support Systems
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Analyzing satellite data for various applications
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Site selection and route planning
-                </p></div>
             </div>
-            <div class="row font-24">
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Facilities management
-                </p></div>
-                <div class="col-md-3 col-sm-6 col-xs-12"><p>
-                    Market planning and analytics.
-                </p></div>-->
-            </div>
-<!--            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/rubiks_mirror_cube.jpg');?>" alt="services image 1">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/close-up-grayscale_00428542.jpg');?>">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/grayscale-screen.jpg');?>">
-            </div>
-            <div class="col-xs-3">
-                <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/grayscale_cup.jpg');?>">
-            </div>-->
         </div>
     </div>
     <br/>
@@ -182,7 +193,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <div class="row" id="geospatial">
         <div class="col-xs-10 col-xs-offset-1">
             <p class="font-54"><?php echo sprintf($this->translate('Geospatial technologies for sustainable economic and social development')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/">a future guideline  <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero');?>">a future guideline  <span class="glyphicon glyphicon-play"></span></a>
             </p>
         </div>
     </div>
@@ -258,7 +269,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext3">
                 <?php echo sprintf($this->translate('How might we help you?')) ?>
-                <a class="btn btn-default btn-lg" href="zero/contact/">GET IN TOUCH  <span class="glyphicon glyphicon-play"></span></a>
+                <a class="btn btn-default btn-lg" href="<?php echo $this->basePath('zero/contact');?>">GET IN TOUCH  <span class="glyphicon glyphicon-play"></span></a>
             </div>
         </div>
     </div>
@@ -274,4 +285,4 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     });
 </script>
 <!--For Google+ Search-->
-<a href="https://plus.google.com/100525295591674298691" rel="publisher">Google+</a>
+<a href="https://plus.google.com/100525295591674298691" rel="publisher"></a>

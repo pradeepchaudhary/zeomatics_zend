@@ -81,7 +81,7 @@ body {
     background-color: #eee;
     /*color: #2c3133;*/
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
-    font-size: 19px;
+    /*font-size: 19px;*/
     /*line-height: 1.42857;*/    
     /*margin-top: 30px;*/
     overflow-x: hidden;
@@ -228,6 +228,38 @@ footer{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+.skip-icon-bottom{
+    color: white;
+    text-align: center;
+    line-height: 3.0em;
+    font-size: 20px;
+    height: 52px;
+    width: 56px;
+    border-radius: 6px;
+    bottom: -80px;
+    position: absolute;
+    right: 0;
+    /*opacity: 1;*/
+    z-index: 99999;
+    /*display: block;*/
+    /*overflow: hidden;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.skip-icon-bottom:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #111;
+    line-height: 2.5em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
 #content{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -253,11 +285,56 @@ footer{
 }
 .mapping_adv{
     margin-bottom: 30px;
+    alignment-adjust: central;
 }
 .mapping_adv p{
     /*font-size: 28px ;*/
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #444;
+    text-transform: uppercase;
+}
+.services{
+    text-align: center;
+}
+.services_icons{
+    /*background: url('images/services-icons/volumetrics-1-130px.png') no-repeat;*/
+    /*background-position: 20px 0px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background: none repeat scroll 0 0;
+    border-radius: 100px;
+    width: 130px;
+    z-index: 2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.services_icons:hover{
+    width: 150px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.services_title {
+    color: #333;
+    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
+    /*font-family: "nudista-web","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    /*line-height: 0.6;*/
+    margin: 0 0 1.25em;
+    text-transform: uppercase;
+}
+.service_info{
+    margin-bottom: 60px;
+}
+.services_info a{
+    margin-bottom: 20px;
 }
 /*.mapping_adv span{
     color: green;
@@ -312,6 +389,12 @@ footer{
 .map{
     text-decoration: none;
 }
+.member{
+    /*height: 325px;*/
+    margin-bottom: 60px;
+    line-height: 1.1em;
+}
+
 
 /*For shrinking the menu bar*/
 /*body {
@@ -443,6 +526,9 @@ nav.shrink .navbar-toggle {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    body{
+        font-size: 16px;
+    }
     .jumbotext{
             font-size: 50px;
             line-height: 56px;
@@ -474,6 +560,9 @@ nav.shrink .navbar-toggle {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    body{
+        font-size: 19px;
+    }
     .jumbotext{
         font-size: 60px;
         line-height: 66px;
@@ -505,6 +594,9 @@ nav.shrink .navbar-toggle {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+    body{
+        font-size: 19px;
+    }
     .jumbotext{
             font-size: 74px;
             line-height: 80px;

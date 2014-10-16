@@ -11,7 +11,7 @@
         ?>
 
         <!-- Le styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/z_favicon.ico'))
                         ->prependStylesheet($this->basePath() . '/css/style.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
@@ -89,6 +89,7 @@
                             </div> 
                           </div>
                         </div>
+                        <a id="go_up" class="skip-icon-bottom page_background" title="Go to Top" href="#body-container"><span class="glyphicon glyphicon-arrow-up"></span></a>
                     </div>
                 </div>
             </div>
@@ -123,6 +124,13 @@
                             $('nav').removeClass('shrink');
                             $('.navbar-fixed-top .container').css( "border-bottom", "" );
                           }
+                });
+                $('#go_up, #go_down').on('click', function(e){
+                    e.preventDefault();
+                    var target= $(this).get(0).id == 'go_up' ? $('#body-container') : $('#content');
+                    $('html, body').stop().animate({
+                       scrollTop: target.offset().top
+                    }, 1000);
                 });
             });
         </script>

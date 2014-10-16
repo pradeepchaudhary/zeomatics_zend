@@ -17,9 +17,10 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext">
-                <?php echo sprintf($this->translate('Map %swhatever%s you like, %swhenever%s you like, %showever%s you like.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
+                <?php // echo sprintf($this->translate('Map %swhatever%s you like, %swhenever%s you like, %showever%s you like.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
+                <?php echo sprintf($this->translate('An exciting field that %sfuses%s land surveying %stechniques%s with computer %stechnology.%s'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
             </div>
-            <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            <a id="go_down" class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
         </div>
     </div>
 </div>

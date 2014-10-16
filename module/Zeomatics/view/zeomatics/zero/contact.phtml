@@ -17,18 +17,20 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
             <div class="jumbotext">
-                <?php echo sprintf($this->translate('We love %sconversations%s. Tell us %swhatever%s you like.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
+                <?php // echo sprintf($this->translate('We love %sconversations%s. Tell us %swhatever%s you like.'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
+                <?php echo sprintf($this->translate('Feel free to %scontact us%s with questions, partnership proposals, media inquiries, or %sjust to say “hi”.%s'), '<span class="page_color">', '</span>', '<span class="page_color">', '</span>', '<span class="page_color">', '</span>') ?>
             </div>
-            <a class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
+            <a id="go_down" class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
         </div>
+        <img class="img-rounded img-responsive" src="../img/GIS_Banner_Large.png"/>
     </div>
 </div>
 <div class="row" id="menu-shrink-mark">
-    <ul class="bxslider">
-        <li><img src="../img/pic3.jpg" /></li>
+<!--    <ul class="bxslider">
+        <li><img src="../img/GIS_Banner_Large.png" /></li>
         <li><img src="../img/pic1.jpg" /></li>
         <li><img src="../img/pic2.jpg" /></li>
-    </ul>
+    </ul>-->
 </div>
 <div id="content"><br/><br/><br/>
     <div class="row">
