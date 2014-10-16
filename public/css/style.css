@@ -272,7 +272,7 @@ footer{
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
     /*font-family: "nudista-web","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-size: 20px;
-    line-height: 0.6;
+    /*line-height: 0.6;*/
     margin: 0 0 40px;
     text-transform: uppercase;
 }
@@ -441,6 +441,10 @@ nav.shrink a {
 /*  padding-top: 10px !important;
   padding-bottom: 10px !important;*/
   font-size: 17px;
+}
+
+.navbar-brand{
+    /*font-size: 26px;*/
 }
 
 nav.shrink .navbar-brand {

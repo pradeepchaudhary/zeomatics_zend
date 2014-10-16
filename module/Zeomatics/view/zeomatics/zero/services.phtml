@@ -36,123 +36,241 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
 </div>-->
 <!--<div class="darkbackground">-->
 <div class="row" id="content">
-        <div class="col-xs-10 col-xs-offset-1">
-            <!--<h2 class="section-title">SERVICES</h2>-->
+        <!--<h2 class="section-title">SERVICES</h2>-->
 <!--            <div class="jumbotext2">
-                <p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>
-                <p>
-                <?php // echo sprintf($this->translate('The ability to visualize important issues on a map. We help in better decision making.')) ?>
-                <?php // echo sprintf($this->translate('We provide the ability to visualize and analyze your issues on a map.')) ?>
-                <a class="btn btn-success btn-lg page_background" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
-                </p>
-            </div>-->
-        </div>
-    </div>
+            <p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>
+            <p>
+            <?php // echo sprintf($this->translate('The ability to visualize important issues on a map. We help in better decision making.')) ?>
+            <?php // echo sprintf($this->translate('We provide the ability to visualize and analyze your issues on a map.')) ?>
+            <a class="btn btn-success btn-lg page_background" href="zero/services">See how we work  <span class="glyphicon glyphicon-play"></span></a>
+            </p>
+        </div>-->
     <div class="row mapping_adv">
         <div class="col-xs-10 col-xs-offset-1">
             <h2 class="section-title">Experience the Power of Mapping in</h2><br/>
             <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-1 col-sm-offset-1 services">
+                <a id="agri_image" href="#agriculture"><div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-1 col-sm-offset-1 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/agriculture-1-130px.png');?>"/>
                     <p>Agriculture</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="engg_image" href="#engineering"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/engineering-1-130px.png');?>"/>
                     <p>Engineering</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="insp_image" href="#inspections"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/inspections-1-130px.png');?>"/>
                     <p>Inspections</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="forest_image" href="#forestry"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/forestry-1-130px.png');?>"/>
                     <p>Forestry</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="oilgas_image" href="#oilgas"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/oil-gas-1-130px.png');?>"/>
                     <p>Oil & Gas</p>
-                </div>
+                </div></a>
             </div>
             <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-2 col-sm-offset-2 services">
+                <a id="enviro_image" href="#enviro"><div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-2 col-sm-offset-2 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/environmental-1-130px.png');?>"/>
                     <p>Environmental Monitoring</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="gis_image" href="#GIS"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/aerial-imagery-1-130px.png');?>"/>
                     <p>GIS & Mapping</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="ip_image" href="#imageprocessing"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/image-processing-1-130px.png');?>"/>
                     <p>Image Processing</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
+                </div></a>
+                <a id="mining_image" href="#mining"><div class="col-md-2 col-sm-2 col-xs-5 services">
                     <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/volumetrics-1-130px.png');?>"/>
                     <p>Mining</p>
-                </div>
+                </div></a>
             </div>
         </div>
     </div>
-	<br/>
-<!--<img src="img/GIS.jpg">-->
+</div>
+<br/>
     
 <!--</div>-->
 <div class="whitebackground"><br/><br/>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-<!--            <h2 class="section-title">TECHNOLOGY</h2>-->
+            <!--<h2 class="section-title">services</h2>-->
             <div class="jumbotext2">
-                <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
-                <?php echo sprintf($this->translate('Geomatics helps you discover the world.')) ?>
-                    <!--<a class="btn btn-success btn-lg page_background" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>-->
+                <?php // echo sprintf($this->translate('Geomatics helps you discover the world.')) ?>
                 </p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">An intro to what we do</h2>
-            <div class="row service_info">
-                <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/cartography.jpg');?>">
-                </div>
-                <div class="col-lg-7">
-                    <p class="services_title font-24">Cartography / Map Design</p>
-                    <p>The practice of creating maps or visual representations of a surface from above it is known as Cartography. Traditionally maps have always on paper, but since the introduction & wide spread use of GIS, cartography has evolved more into digital formats.</p>
-                    <p><a href="#">Read more >></a></p>
-                </div>
-            </div>
-            <hr/>
-            <div class="row service_info">
+            <!--<h2 class="section-title">An intro to what we do</h2>-->
+            <div id="agriculture" class="row service_info">
                 <div class="col-lg-5 col-lg-push-7">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/GIS.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/IKONOS.jpg');?>">
                 </div>
                 <div class="col-lg-7 col-lg-pull-5">
-                    <p class="services_title font-24">Geographic Information Systems (GIS)</p>
-                    <p>GIS have become a rapidly growing field that allows people to solve & model real world situations by incorporating spatial and tabular data. GIS operates on many levels and has become an essential tool for most urban and resource planning and management organizations.</p>
+                    <p class="services_title font-24">Agriculture</p>
+                    <p>Aerial imagery and remote sensing can help reduce costs and maximize yields on high value crops by providing timely imagery to the producer. Water and fertilizer can now be placed in the areas needed, and using Infra-red (IR) imagery crops can be monitored at a cellular level. Areas of need can be identified using IR imagery days ahead of using only visual imagery for plant nutriment and stress mapping.</p>
+                    <p>Vegetation index maps can be made using multiple bands of imagery called Normalized Difference Vegetation Indexes or NDVIs. NDVIs can help the producer monitor areas of stress, low soil water, biomass production, and vegetation percent cover. High resolution imagery of ~5 cm can be delivered to the producer or agronomist several times a week to develop a very accurate prescription for the field. Imagery and NDVI maps can be produced much more accurately, frequently, and at a lower cost than through the use to satellites or manned aircraft.</p>
                     <p><a href="#">Read more >></a></p>
                 </div>
             </div>
             <hr/>
-            <div class="row service_info">
+            <div id="engineering" class="row service_info">
                 <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/RS.gif');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/home-2.jpg');?>">
                 </div>
                 <div class="col-lg-7">
-                    <p class="services_title font-24">Remote Sensing</p>
-                    <p>Remote sensing is the science of acquiring information about a surface without physically being in contact with it. The most common example of remote sensing is aerial photography however there are hundreds of  applications ranging from space-borne satellites to under-ground geophysical systems.</p>
+                    <p class="services_title font-24">Engineering</p>
+                    <p>zeomatics can provide a suite of products for engineering applications, ranging from road construction surveys, as-built surveys, and drainage mapping. zeomatics is fully equipped with Trimble RTK survey instruments and when complemented with UAV technology projects can be approached in a multitude of fashions to best suit the client’s needs. A combination of traditional survey and UAV surveys can complement one another providing elevation data, survey pickup, volume analysis, and visual progress updates. The combination of the two instruments allows for all of the necessary tasks of construction projects to be completed with the added value of higher resolution data and the addition of aerial imagery.</p>
                     <p><a href="#">Read more >></a></p>
                 </div>
             </div>
             <hr/>
-            <div class="row service_info">
+            <div id="inspections" class="row service_info">
                 <div class="col-lg-5 col-lg-push-7">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/LIDAR.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/inspection.jpg');?>">
                 </div>
                 <div class="col-lg-7 col-lg-pull-5">
-                    <p class="services_title font-24">LIDAR</p>
-                    <p>LIDAR uses high precision GPS with an Inertial Measurement Unit (IMU) to determine accurate surface locations. The resultant measurements consists of geographic locations that can be further processed to produce different spatial data products. We have worked in all aspects of LIDAR, from data acquisition (with both airborne and terrestrial scanners) to processing and product creation.</p>
+                    <p class="services_title font-24">Inspections</p>
+                    <p>Aerial imagery and UAS platforms can give industry an easily attainable bird’s eye view of infrastructure. Using a combination of sensors, a number of stresses, fractures, and failures can be detected.</p>
+                    <ul>
+                        <li>Electrical Insulators</li>
+                        <li>Solar Panels</li>
+                        <li>Wildlife Census</li>
+                        <li>Wind Blade Inspection</li>
+                        <li>Radio Tower</li>
+                        <li>Salt Water and Oil Infiltration</li>
+                        <li>Forest Stands</li>
+                        <li>Vegetation Health</li>
+                        <li>Flare stacks and Oil Rig Derricks</li>
+                    </ul>
+                    <p>PROBLEM:
+                        Power lines and other infrastructure need to be surveyed to assess the status of equipment. In most cases this equipment is in an elevated, dangerous, or remote location.</p>
+                    <p>SOLUTION:
+                        Use UAV technology to easily prepare survey flights, starting from GIS line descriptions, GPS coordinates, or ground based targeting.</p>
+                    <p>BENEFITS:</p>
+                    <ul>
+                        <li>Minimize inspection times, involved resources and derived costs. Create historical records, useful in creating long term equipment status reports, and GIS databases.</li>
+                        <li>Remove people and dangerous manned aircraft from the situation.</li>
+                        <li>Minimize costs, mistakes, and time using unmanned systems.</li>
+                    </ul>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="forestry" class="row service_info">
+                <div class="col-lg-5">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/Treecover.png');?>">
+                </div>
+                <div class="col-lg-7">
+                    <p class="services_title font-24">Forestry</p>
+                    <p>Aerial imagery and UAS platforms provide industries with an easily attainable bird’s eye view of cut blocks and forest stands.</p> 
+                    <p>Aerial imagery combined with GIS provides companies with asset management, survey information, area calculations, litter assessments, and species mapping all in one trip to the field. Remote sensing and aerial imagery have long been an integral part of forestry management and conservation efforts. Unmanned systems provide a leap forward in data quality that is over 25x finer than satellite and can be acquired in a fraction of the time.</p>
+                    <p>zeomatics provides the most advanced imaging solutions, a broad spectrum of sensors and the latest digital mapping services to empower forestry management with the information they need to make crucial decisions.</p>
+                    <p>PROBLEM:
+                        Area calculations and tree litter calculations need to be done quickly and cost effectively.</p>
+                    <p>SOLUTION:
+                        Use UAS technology to easily prepare survey flights, starting from GIS line descriptions, GPS coordinates, or ground based targeting. Survey data can be extracted from the ortho-imagery and area calculations made, along with percent cover and stump counts.</p>
+                    <p>BENEFITS:</p>
+                    <ul>
+                        <li>Minimize inspection times, involved resources and derived costs. Create historical records, useful in creating long term equipment status reports, and GIS databases.</li>
+                        <li>Remove people and dangerous manned aircraft from the situation.</li>
+                        <li>Minimize costs, mistakes, and time using unmanned systems.</li>
+                    </ul>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="oilgas" class="row service_info">
+                <div class="col-lg-5 col-lg-push-7">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/pipeline.jpg');?>">
+                </div>
+                <div class="col-lg-7 col-lg-pull-5">
+                    <p class="services_title font-24">Oil & Gas</p>
+                    <p>The Oil and Gas industry can benefit from the use of Remotely Piloted Vehicles (RPV) and Geography Information System (GIS) technology in a number of ways. Facility inspections, spill scene live video, pipeline monitoring, site planning, vegetation mapping, wildlife surveys, and many more applications are available. RPV technology has several advantages over satellite, manned aircraft and helicopters, including cloud free data, very high resolution imagery (~2-5cm), quick turnaround of data (~same day if needed), no pilots in dangerous areas, RPV do not fatigue, and lower costs to acquire data.</p>
+                    <p>There are significant economic and environmental requirements to keeping oil and gas facilities operational and safe. With the Aeryon Scout’s ability to fly pre-planned flight paths, constant monitoring of pipelines and facilities is easily attained. Hot-swap to a thermal camera and you can quickly detect potential leaks or discover trespassers 24 hours a day. zeomatics can be on site within hours and have a live video stream to the stakeholder office miles away to enable quick scene assessment and resource deployment.</p>
+                    <p>Sensitive areas of interest can be mapped for endangered species habitat, water drainage, line of sight from a specific location, soil type, and vegetation cover. With use of the thermal camera wildlife accounting is made easy night or day. Vegetation zones can be flown then classified using GIS into vegetation types, zones, and percent cover maps. Endangered species habitat can be mapped and classified into the areas most likely to host each animal, then using the thermal payload flown and counted.</p>
+                    <p>Applications:</p>
+                    <ul>
+                        <li>Oil and Gas services</li>
+                        <li>Lease planning / cut and fill</li>
+                        <li>3-D point clouds</li>
+                        <li>Inspection services</li>
+                        <li>Drainage analysis</li>
+                        <li>Spill response</li>
+                        <li>Digital terrain models</li>
+                        <li>Digital elevation models</li>
+                        <li>Vegetation health calculations and classification</li>
+                        <li>Pit and pile volume calculations</li>
+                    </ul>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="enviro" class="row service_info">
+                <div class="col-lg-5">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/enviro.jpg');?>">
+                </div>
+                <div class="col-lg-7">
+                    <p class="services_title font-24">Environmental Monitoring</p>
+                    <p>Assessing potential environmental damage or taking environmental samples will often lead you to places not suitable for humans – like the top of a smoke stack or the middle of a hazardous material spill. The Aeryon SkyRanger can provide a complete visual of the area allowing you to fully understand any potential risk.</p> 
+                    <p>The easily interchangeable payloads of the Aeryon SkyRanger allow for customized payloads to be developed and installed in the field, so air or liquid sampling can be done from remote locations.
+                    <p>Forest fire and other hazards can be assessed out of harm’s way using UAS technology.</p>
+                    <strong>Emergency Services</strong>
+                    <p>Accident scenes can be better managed and reconstructed using aerial photos. Clean up and man power times can be greatly reduced using Unmanned Systems.</p>
+                    <p>Because all of our images are georeferenced and to scale, GIS analysis of the scene can be conducted to measure angles, distances of skid marks, speed, and timing.</p>
+                    <p>AVAILABLE SENSORS:</p>
+                    <ul>
+                        <li>Thermal</li>
+                        <li>Infra-Red</li>
+                        <li>Visual</li>
+                        <li>Video</li>
+                    </ul>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="GIS" class="row service_info">
+                <div class="col-lg-5 col-lg-push-7">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/gis.gif');?>">
+                </div>
+                <div class="col-lg-7 col-lg-pull-5">
+                    <p class="services_title font-24">GIS & Mapping</p>
+                    <p>zeomatics is very skillful and experienced in GIS & Mapping applications. GIS applications are becoming ever more popular, giving visual and geographic properties to features within our surroundings which can then be used in a variety of tasks from endangered species mapping and proximity analysis to verifying acres seeded in farming.</p>
+                    <p>Municipal applications are also highly prevalent as GIS data sets are very useful in monitoring inventory in parks, gravel pits and hamlets. Typical mapping procedures with a GPS can become very time consuming and expensive. zeomatics' approach using high resolution imagery allows the deliverable to be completed in a more efficient manner with the added benefit of a high resolution imagery of the project area.</p>
+                    <strong>GIS & Photogrammetry</strong>
+                    <p>Aerial images and geospatial data can be combined to provide a powerful tool for industry. Need GIS services done for your municipality or company. Let us do it for you.</p>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="imageprocessing" class="row service_info">
+                <div class="col-lg-5">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/ip.jpg');?>">
+                </div>
+                <div class="col-lg-7">
+                    <p class="services_title font-24">Image Processing</p>
+                    <p>Whether you are in need of rectifying old imagery or compiling mosaics with data you have collected, zeomatics can complete the task.</p> 
+                    <p>We use the world’s best commercially available photomosaic software to control error and produce the highest quality maps and digital terrain models.</p> 
+                    <p>zeomatics provides the most advanced imaging solutions, a broad spectrum of sensors and the latest digital mapping services to empower you with the information you need to make crucial decisions.</p>
+                    <p><a href="#">Read more >></a></p>
+                </div>
+            </div>
+            <hr/>
+            <div id="mining" class="row service_info">
+                <div class="col-lg-5 col-lg-push-7">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/mining.jpg');?>">
+                </div>
+                <div class="col-lg-7 col-lg-pull-5">
+                    <p class="services_title font-24">Mining</p>
+                    <p>zeomatics utilizes the latest in unmanned aerial vehicle (UAV) and RTK survey equipment to provide stunning, high-definition imagery and high resolution quantity surveys for the mining industry and municipalities.</p>
+                    <p>Class leading 3D and Geographic Information Systems (GIS) software provide unmatched accuracy and detail with typical data resolution for both imagery and digital surface models (DSMs) of around 3.5cm. This means that there is continuous elevation data for the entire survey area, with precise elevation readings every 3.5cm, allowing observation of even the most subtle and minute changes in topography.</p>
+                    <p>The high level of accuracy that zeomatics delivers translates into more accurate volume calculations, contour mapping, and 3D point clouds. In fact, testing has shown the zeomatics method delivers a 3-5% increase in data accuracy compared with traditional GPS surveys, allowing clients to be confident that they are receiving the highest quality data available.</p>
                     <p><a href="#">Read more >></a></p>
                 </div>
             </div>
@@ -180,5 +298,33 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
 //            auto: true,
 //            autoControls: true
           });
+    });
+    $('#back_to_content,#agri_image, #engg_image,#insp_image,#forest_image,#oilgas_image,#enviro_image,#ip_image,#gis_image,#mining_image').on('click', function(e){
+        e.preventDefault();
+        if($(this).get(0).id == 'back_to_content'){
+            var target= $('#content');
+        }else if($(this).get(0).id == 'agri_image'){
+            var target= $('#agriculture');
+        }else if($(this).get(0).id == 'engg_image'){
+            var target= $('#engineering');
+        }else if($(this).get(0).id == 'insp_image'){
+            var target= $('#inspections');
+        }else if($(this).get(0).id == 'forest_image'){
+            var target= $('#forestry');
+        }else if($(this).get(0).id == 'oilgas_image'){
+            var target= $('#oilgas');
+        }else if($(this).get(0).id == 'enviro_image'){
+            var target= $('#enviro');
+        }else if($(this).get(0).id == 'gis_image'){
+            var target= $('#GIS');
+        }else if($(this).get(0).id == 'ip_image'){
+            var target= $('#imageprocessing');
+        }else if($(this).get(0).id == 'mining_image'){
+            var target= $('#mining');
+        }
+//        var target= $(this).get(0).id == 'agri_image' ? $('#agriculture') : $('#engineering');
+        $('html, body').stop().animate({
+           scrollTop: target.offset().top-100
+        }, 1000);
     });
 </script>
