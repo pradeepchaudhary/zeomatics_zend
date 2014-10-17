@@ -23,11 +23,13 @@ body {
 .btn-success.active,
 .btn-success.disabled,
 .btn-success[disabled] {
-  background-color: #57a900;
+  /*background-color: #57a900;*/
+  background-color: green;
 }
 
 .btn-success:active, .btn-success.active {
-  background-color: #57a900;
+  /*background-color: #57a900;*/
+  background-color: green;
 }
 
 div.container a.brand {
@@ -38,7 +40,7 @@ div.container a.brand {
 
 
 /*My Styling begins*/
-@font-face {
+/*@font-face {
     font-family: 'fertigo_proregular';
     src: url('fonts/Fertigo_PRO-webfont.eot');
     src: url('fonts/Fertigo_PRO-webfont.eot?#iefix') format('embedded-opentype'),
@@ -48,7 +50,7 @@ div.container a.brand {
          url('fonts/Fertigo_PRO-webfont.svg#fertigo_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 @font-face {
     font-family: 'aniversregular';
     src: url('fonts/Anivers_Regular-webfont.eot');
@@ -80,11 +82,16 @@ div.container a.brand {
 body {
     background-color: #eee;
     /*color: #2c3133;*/
-    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
+    font-family: 'Roboto','aniversregular',Helvetica,Arial,sans-serif;
+    font-weight: 300;
     /*font-size: 19px;*/
     /*line-height: 1.42857;*/    
     /*margin-top: 30px;*/
     overflow-x: hidden;
+}
+/*for removing the dotted focus line around the links*/
+a:focus{
+    outline: 0;
 }
 /*default values for page color and background*/
     .page_color{
@@ -325,7 +332,6 @@ footer{
 .services_title {
     color: #333;
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
-    /*font-family: "nudista-web","Helvetica Neue",Helvetica,Arial,sans-serif;*/
     /*line-height: 0.6;*/
     margin: 0 0 1.25em;
     text-transform: uppercase;
@@ -336,11 +342,29 @@ footer{
 .services_info a{
     margin-bottom: 20px;
 }
+.project_title {
+    color: #333;
+    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
+    margin: 0 0 0.75em;
+    text-transform: uppercase;
+}
+.project_image{
+    margin-bottom: 20px;
+}
+.project_subtitle {
+    color: #333;
+    font-family: 'Roboto', Helvetica,Arial,sans-serif;
+    /*font-weight: bolder;*/
+    /*font-size: 20px;*/
+    /*margin: 0 0 0.75em;*/
+    /*text-transform: uppercase;*/
+}
 /*.mapping_adv span{
     color: green;
 }*/
 #geospatial{
-    font-family: 'aniversregular',Helvetica,Arial,sans-serif;
+    /*font-family: 'Titillium Web','aniversregular',Helvetica,Arial,sans-serif;*/
+    font-family: 'Advent Pro', sans-serif;
     /*font-size: 50px;*/
     margin: 30px 0;
     color: #FFF;
@@ -495,6 +519,9 @@ nav.shrink .navbar-toggle {
     .font-24{
         font-size: 16px;
     }
+    .font-20{
+        font-size: 15px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -524,6 +551,9 @@ nav.shrink .navbar-toggle {
         font-size: 26px;
     }
     .font-24{
+        font-size: 16px;
+    }
+    .font-20{
         font-size: 16px;
     }
 }
@@ -560,12 +590,15 @@ nav.shrink .navbar-toggle {
     .font-24{
         font-size: 16px;
     }
+    .font-20{
+        font-size: 16px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     body{
-        font-size: 19px;
+        font-size: 18px;
     }
     .jumbotext{
         font-size: 60px;
@@ -593,6 +626,9 @@ nav.shrink .navbar-toggle {
     }
     .font-24{
         font-size: 20px;
+    }
+    .font-20{
+        font-size: 19px;
     }
 }
 
@@ -627,6 +663,9 @@ nav.shrink .navbar-toggle {
     }
     .font-24{
         font-size: 24px;
+    }
+    .font-20{
+        font-size: 20px;
     }
 }
 

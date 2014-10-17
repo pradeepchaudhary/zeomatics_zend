@@ -48,69 +48,52 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             </div>
         </div>
     </div>
-    <div class="row mapping_adv">
-        <div class="col-xs-10 col-xs-offset-1">
-            <h2 class="section-title">Experience the Power of Mapping in</h2><br/>
-            <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-1 col-sm-offset-1 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/agriculture-1-130px.png');?>"/>
-                    <p>Agriculture</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/engineering-1-130px.png');?>"/>
-                    <p>Engineering</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/inspections-1-130px.png');?>"/>
-                    <p>Inspections</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/forestry-1-130px.png');?>"/>
-                    <p>Forestry</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/oil-gas-1-130px.png');?>"/>
-                    <p>Oil & Gas</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-2 col-sm-offset-2 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/environmental-1-130px.png');?>"/>
-                    <p>Environmental Monitoring</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/aerial-imagery-1-130px.png');?>"/>
-                    <p>GIS & Mapping</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/image-processing-1-130px.png');?>"/>
-                    <p>Image Processing</p>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-5 services">
-                    <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/volumetrics-1-130px.png');?>"/>
-                    <p>Mining</p>
-                </div>
-            </div>
-<!--            <div class="font-24">
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Cost Savings from Greater Efficiency</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Decision Making</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Improved Communication</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Managing Geographically</p>
-                </div>
-                <div class="col-md-6">
-                    <p><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Better Record Keeping</p>
-                </div>
-            </div>-->
+<div class="row mapping_adv">
+    <div class="col-xs-10 col-xs-offset-1">
+        <h2 class="section-title">Experience the Power of Mapping in</h2><br/>
+        <div class="row">
+            <a id="agri_image" href="<?php echo $this->basePath('zero/services');?>#agriculture"><div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-1 col-sm-offset-1 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/agriculture-1-130px.png');?>"/>
+                <p>Agriculture</p>
+            </div></a>
+            <a id="engg_image" href="<?php echo $this->basePath('zero/services');?>#engineering"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/engineering-1-130px.png');?>"/>
+                <p>Engineering</p>
+            </div></a>
+            <a id="insp_image" href="<?php echo $this->basePath('zero/services');?>#inspections"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/inspections-1-130px.png');?>"/>
+                <p>Inspections</p>
+            </div></a>
+            <a id="forest_image" href="<?php echo $this->basePath('zero/services');?>#forestry"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/forestry-1-130px.png');?>"/>
+                <p>Forestry</p>
+            </div></a>
+            <a id="oilgas_image" href="<?php echo $this->basePath('zero/services');?>#oilgas"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/oil-gas-1-130px.png');?>"/>
+                <p>Oil & Gas</p>
+            </div></a>
+        </div>
+        <div class="row">
+            <a id="enviro_image" href="<?php echo $this->basePath('zero/services');?>#enviro"><div class="col-md-2 col-sm-2 col-xs-5 col-md-offset-2 col-sm-offset-2 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/environmental-1-130px.png');?>"/>
+                <p>Environmental Monitoring</p>
+            </div></a>
+            <a id="gis_image" href="<?php echo $this->basePath('zero/services');?>#GIS"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/aerial-imagery-1-130px.png');?>"/>
+                <p>GIS & Mapping</p>
+            </div></a>
+            <a id="ip_image" href="<?php echo $this->basePath('zero/services');?>#imageprocessing"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/image-processing-1-130px.png');?>"/>
+                <p>Image Processing</p>
+            </div></a>
+            <a id="mining_image" href="<?php echo $this->basePath('zero/services');?>#mining"><div class="col-md-2 col-sm-2 col-xs-5 services">
+                <img class="img-responsive services_icons page_background" src="<?php echo $this->basePath('img/services_icons/volumetrics-1-130px.png');?>"/>
+                <p>Mining</p>
+            </div></a>
         </div>
     </div>
-	<br/>
+</div>
+    <br/>
 <!--<img src="<?php echo $this->basePath('img/GIS.jpg');?>">-->
     
 <!--</div>-->
@@ -219,46 +202,46 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         <h2 class="section-title">We've got something for everybody</h2><br/>
         <div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Transportation</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Transportation</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Public Safety</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Public Safety</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Defense</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Defense</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Business/Commercial</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Business/Commercial</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Environmental Management</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Environmental Management</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Facilities Management</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Facilities Management</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Geodesign</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Geodesign</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Government</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Government</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Health & Human Services</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Health & Human Services</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Land Administration & Cadastre</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Land Administration & Cadastre</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Map, Chart, and Data Production</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Map, Chart, and Data Production</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Natural Resources</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Natural Resources</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Utilities and Communications</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Utilities and Communications</p>
             </div>
             <div class="col-md-6">
-                <p  class="font-24"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Spatial Data Infrastructure</p>
+                <p  class="font-20"><span class="glyphicon glyphicon-circle-arrow-right page_color"></span>  Spatial Data Infrastructure</p>
             </div>
         </div>
     </div>
