@@ -74,8 +74,11 @@ div.container a.brand {
 }
 #body-container{
     min-height: 500px;
-    width: auto;
+    /*width: auto !important;*/
     overflow-x: hidden;
+}
+.row{
+    margin-right: 0px;
 }
 #footer-container{
     padding: 60px 0;
@@ -205,6 +208,9 @@ footer{
 
 .bxslider{
     border: 0;
+}
+.bx-viewport{
+    
 }
 .skip-icon{
     color: white;

@@ -207,7 +207,7 @@
 			slider.viewport.css({
 				width: '100%',
 				overflow: 'hidden',
-				position: 'relative'
+//				position: 'relative'
 			});
 			slider.viewport.parent().css({
 				maxWidth: getViewportMaxWidth()
