@@ -94,13 +94,13 @@ a:focus{
     outline: 0;
 }
 /*default values for page color and background*/
-    .page_color{
-        color:green;
-    }
-    .page_background{
-        background-color: green;
-        color: #eee;
-    }
+.page_color{
+    color:green;
+}
+.page_background{
+    background-color: green;
+    color: #eee;
+}
 .btn{
     text-transform: uppercase;
     font-family: 'aniversregular',Helvetica,Arial,sans-serif;
@@ -293,6 +293,7 @@ footer{
 .mapping_adv{
     margin-bottom: 30px;
     alignment-adjust: central;
+    font-weight: 400;
 }
 .mapping_adv p{
     /*font-size: 28px ;*/
@@ -444,10 +445,10 @@ nav a{
 }
 
 .navbar-brand {
-    font-family: Arial;
+    font-family: 'Roboto',Arial;
     /*font-size: 40px;*/
     margin-bottom: 20px;
-    font-weight:bold;
+    font-weight:900;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -465,10 +466,6 @@ nav.shrink a {
 /*  padding-top: 10px !important;
   padding-bottom: 10px !important;*/
   font-size: 17px;
-}
-
-.navbar-brand{
-    /*font-size: 26px;*/
 }
 
 nav.shrink .navbar-brand {

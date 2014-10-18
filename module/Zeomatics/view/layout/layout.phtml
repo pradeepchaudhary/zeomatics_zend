@@ -11,9 +11,9 @@
         ?>
 
         <!-- Le styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/z_favicon.ico'))
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.gif'))
                         ->prependStylesheet($this->basePath() . '/css/style.css')
-                        ->appendStylesheet('http://fonts.googleapis.com/css?family=Roboto:300,400|Advent+Pro')
+                        ->appendStylesheet('http://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Advent+Pro')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
                         ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
 
@@ -65,14 +65,14 @@
                             <div class="widget">
                                 <h3 class="widget-title">About Us</h3>
                                 <p >We're passionate just like you. Together we can transform our world.</p>
-                                <a class="btn btn-success btn-lg page_background" href="zero/about/">Learn More  <span class="glyphicon glyphicon-play"></span></i></a>
+                                <a class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero/about');?>">Learn More  <span class="glyphicon glyphicon-play"></span></i></a>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <div class="widget">
                                 <h3 class="widget-title ">We offer</h3>
                                 <p>Project consulting, implementation services, knowledge transfer and delivery of ready-to-use systems.</p>
-                                <a class="btn btn-success btn-lg page_background" href="zero/consulting/">See Our Work  <span class="glyphicon glyphicon-play"></span></a>
+                                <a class="btn btn-success btn-lg page_background" href="<?php echo $this->basePath('zero/services');?>">See Our Work  <span class="glyphicon glyphicon-play"></span></a>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-12">

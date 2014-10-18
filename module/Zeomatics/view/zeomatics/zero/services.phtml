@@ -116,7 +116,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                     <p class="services_title font-24">Agriculture</p>
                     <p>Aerial imagery and remote sensing can help reduce costs and maximize yields on high value crops by providing timely imagery to the producer. Water and fertilizer can now be placed in the areas needed, and using Infra-red (IR) imagery crops can be monitored at a cellular level. Areas of need can be identified using IR imagery days ahead of using only visual imagery for plant nutriment and stress mapping.</p>
                     <p>Vegetation index maps can be made using multiple bands of imagery called Normalized Difference Vegetation Indexes or NDVIs. NDVIs can help the producer monitor areas of stress, low soil water, biomass production, and vegetation percent cover. High resolution imagery of ~5 cm can be delivered to the producer or agronomist several times a week to develop a very accurate prescription for the field. Imagery and NDVI maps can be produced much more accurately, frequently, and at a lower cost than through the use to satellites or manned aircraft.</p>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -127,7 +127,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <div class="col-lg-7">
                     <p class="services_title font-24">Engineering</p>
                     <p>zeomatics can provide a suite of products for engineering applications, ranging from road construction surveys, as-built surveys, and drainage mapping. zeomatics is fully equipped with Trimble RTK survey instruments and when complemented with UAV technology projects can be approached in a multitude of fashions to best suit the client’s needs. A combination of traditional survey and UAV surveys can complement one another providing elevation data, survey pickup, volume analysis, and visual progress updates. The combination of the two instruments allows for all of the necessary tasks of construction projects to be completed with the added value of higher resolution data and the addition of aerial imagery.</p>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -159,7 +159,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                         <li>Remove people and dangerous manned aircraft from the situation.</li>
                         <li>Minimize costs, mistakes, and time using unmanned systems.</li>
                     </ul>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -169,7 +169,8 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 </div>
                 <div class="col-lg-7">
                     <p class="services_title font-24">Forestry</p>
-                    <p>Aerial imagery and UAS platforms provide industries with an easily attainable bird’s eye view of cut blocks and forest stands.</p> 
+                    <?php 
+                    $string = "<p>Aerial imagery and UAS platforms provide industries with an easily attainable bird’s eye view of cut blocks and forest stands.</p> 
                     <p>Aerial imagery combined with GIS provides companies with asset management, survey information, area calculations, litter assessments, and species mapping all in one trip to the field. Remote sensing and aerial imagery have long been an integral part of forestry management and conservation efforts. Unmanned systems provide a leap forward in data quality that is over 25x finer than satellite and can be acquired in a fraction of the time.</p>
                     <p>zeomatics provides the most advanced imaging solutions, a broad spectrum of sensors and the latest digital mapping services to empower forestry management with the information they need to make crucial decisions.</p>
                     <p>PROBLEM:
@@ -181,8 +182,10 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                         <li>Minimize inspection times, involved resources and derived costs. Create historical records, useful in creating long term equipment status reports, and GIS databases.</li>
                         <li>Remove people and dangerous manned aircraft from the situation.</li>
                         <li>Minimize costs, mistakes, and time using unmanned systems.</li>
-                    </ul>
-                    <p><a href="#">Read more >></a></p>
+                    </ul>";
+//                    echo strlen($string) >= 500 ? substr($string, 0, 490) . '... <p><a href="#">Read more >></a></p>' :$string;
+                    echo $string.'<!--p><a href="#">Read more >></a></p-->';
+                    ?>
                 </div>
             </div>
             <hr/>
@@ -208,7 +211,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                         <li>Vegetation health calculations and classification</li>
                         <li>Pit and pile volume calculations</li>
                     </ul>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -231,7 +234,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                         <li>Visual</li>
                         <li>Video</li>
                     </ul>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -245,7 +248,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                     <p>Municipal applications are also highly prevalent as GIS data sets are very useful in monitoring inventory in parks, gravel pits and hamlets. Typical mapping procedures with a GPS can become very time consuming and expensive. zeomatics' approach using high resolution imagery allows the deliverable to be completed in a more efficient manner with the added benefit of a high resolution imagery of the project area.</p>
                     <strong>GIS & Photogrammetry</strong>
                     <p>Aerial images and geospatial data can be combined to provide a powerful tool for industry. Need GIS services done for your municipality or company. Let us do it for you.</p>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -258,7 +261,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                     <p>Whether you are in need of rectifying old imagery or compiling mosaics with data you have collected, zeomatics can complete the task.</p> 
                     <p>We use the world’s best commercially available photomosaic software to control error and produce the highest quality maps and digital terrain models.</p> 
                     <p>zeomatics provides the most advanced imaging solutions, a broad spectrum of sensors and the latest digital mapping services to empower you with the information you need to make crucial decisions.</p>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <hr/>
@@ -271,7 +274,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                     <p>zeomatics utilizes the latest in unmanned aerial vehicle (UAV) and RTK survey equipment to provide stunning, high-definition imagery and high resolution quantity surveys for the mining industry and municipalities.</p>
                     <p>Class leading 3D and Geographic Information Systems (GIS) software provide unmatched accuracy and detail with typical data resolution for both imagery and digital surface models (DSMs) of around 3.5cm. This means that there is continuous elevation data for the entire survey area, with precise elevation readings every 3.5cm, allowing observation of even the most subtle and minute changes in topography.</p>
                     <p>The high level of accuracy that zeomatics delivers translates into more accurate volume calculations, contour mapping, and 3D point clouds. In fact, testing has shown the zeomatics method delivers a 3-5% increase in data accuracy compared with traditional GPS surveys, allowing clients to be confident that they are receiving the highest quality data available.</p>
-                    <p><a href="#">Read more >></a></p>
+                    <!--p><a href="#">Read more >></a></p-->
                 </div>
             </div>
             <br/>
