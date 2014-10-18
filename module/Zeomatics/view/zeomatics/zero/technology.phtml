@@ -48,7 +48,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
         <div class="col-xs-10 col-xs-offset-1">
 <!--            <h2 class="section-title">TECHNOLOGY</h2>-->
             <div class="title_font font-54">
-                <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/services/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
+                <!--<p>We help you map and make meaningful connections with your customers. <a class="btn btn-green" href="zero/technology/">See how we work  <i class="icon-btn" style="right: 18px;"></i></a></p>-->
                 <p>
                 <?php echo sprintf($this->translate('An intro to what we do...')) ?>
                     <!--<a class="btn btn-success btn-lg page_background" href="zero/technology">View Technology <span class="glyphicon glyphicon-play"></span></a>-->
@@ -61,9 +61,9 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1">
 <!--            <h2 class="section-title">An intro to what we do</h2>-->
-            <div class="row service_info">
+            <div id="cartography" class="row service_info">
                 <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/gis-map-rolls_zoomed.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/gis-map-rolls_zoomed.jpg');?>">
                 </div>
                 <div class="col-lg-7">
                     <p class="services_title font-24">Cartography / Map Design</p>
@@ -74,7 +74,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5 col-lg-push-7">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/GIS.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/GIS.jpg');?>">
                 </div>
                 <div class="col-lg-7 col-lg-pull-5">
                     <p class="services_title font-24">Geographic Information Systems (GIS)</p>
@@ -85,7 +85,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/remotesensing.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/remotesensing.jpg');?>">
                 </div>
                 <div class="col-lg-7">
                     <p class="services_title font-24">Remote Sensing</p>
@@ -96,7 +96,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5 col-lg-push-7">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/LIDAR.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/LIDAR.jpg');?>">
                 </div>
                 <div class="col-lg-7 col-lg-pull-5">
                     <p class="services_title font-24">LIDAR</p>
@@ -107,7 +107,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/bathymetry.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/bathymetry.jpg');?>">
                 </div>
                 <div class="col-lg-7">
                     <p class="services_title font-24">Bathymetry</p>
@@ -129,7 +129,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5 col-lg-push-7">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/thermalimaging.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/thermalimaging.jpg');?>">
                 </div>
                 <div class="col-lg-7 col-lg-pull-5">
                     <p class="services_title font-24">Thermal Imaging (TABI)</p>
@@ -162,28 +162,24 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             <hr/>
             <div class="row service_info">
                 <div class="col-lg-5">
-                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/services/NASAs-HyspIRI.jpg');?>">
+                    <img class="img-rounded img-responsive" src="<?php echo $this->basePath('img/technology/NASAs-HyspIRI.jpg');?>">
                 </div>
                 <div class="col-lg-7">
-                    <p class="services_title font-24">Hyperspectral (CASI)</p>
-                    <p>Used predominately for environmental monitoring, CASI (Compact Airborne Spectrographic Imager) is a flexible mapping tool capable of multispectral and hyperspectral imaging. This powerful optical imager from ITRES measures reflected light from the visible and near infrared portion of the spectrum (between 400nm and 1000nm), which is split into multiple and discrete image bands.
-
-This multispectral imagery is automatically and accurately orthorectified using data from the LIDAR system. The imagery's spatial resolution can be as fine as 50cm and it is map ready so can be used directly in GIS and image processing software.
-
-Applications include:
-
-Mapping coastal habitats (including change)
-Land cover classification
-Flood event monitoring
-Biomass studies
-Archaeology
-Forest management
-Agricultural crop management
-Environment Agency Geomatics has significant skill and expertise in this field and continue to carry out regular work on behalf of the Environment Agency for salt marsh and biomass monitoring, as well as work for other Government Agencies, NGOs and commercial organisations. To learn more about how you can use CASI for environmental monitoring and assessment contact us.
-
-The ability of multispectral data to quantify parameters such as biomass is a significant advantage over conventional aerial photography.
-
-Download our CASI flyer to learn more about how we can help you using this impressive remote sensing technique.</p>
+                    <p class="services_title font-24">Hyperspectral Imaging</p>
+                    <p>Used predominately for environmental monitoring, CASI (Compact Airborne Spectrographic Imager) is a flexible mapping tool capable of multispectral and hyperspectral imaging. This powerful optical imager from ITRES measures reflected light from the visible and near infrared portion of the spectrum (between 400nm and 1000nm), which is split into multiple and discrete image bands.</p>
+                    <p>This multispectral imagery is automatically and accurately orthorectified using data from the LIDAR system. The imagery's spatial resolution can be as fine as 50cm and it is map ready so can be used directly in GIS and image processing software.</p>
+                    <strong>Applications include:</strong>
+                    <ul>
+                        <li>Mapping coastal habitats (including change)</li>
+                        <li>Land cover classification</li>
+                        <li>Flood event monitoring</li>
+                        <li>Biomass studies</li>
+                        <li>Archaeology</li>
+                        <li>Forest management</li>
+                        <li>Agricultural crop management</li>
+                    </ul>
+                    <!--Environment Agency Geomatics has significant skill and expertise in this field and continue to carry out regular work on behalf of the Environment Agency for salt marsh and biomass monitoring, as well as work for other Government Agencies, NGOs and commercial organisations. To learn more about how you can use CASI for environmental monitoring and assessment contact us.-->
+                    <p>The ability of multispectral data to quantify parameters such as biomass is a significant advantage over conventional aerial photography.</p>
                     <p><a href="#">Read more >></a></p>
                 </div>
             </div>

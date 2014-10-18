@@ -209,9 +209,6 @@ footer{
 .bxslider{
     border: 0;
 }
-.bx-viewport{
-    
-}
 .skip-icon{
     color: white;
     text-align: center;
@@ -294,11 +291,37 @@ footer{
     text-transform: uppercase;
 }
 
-#expertise_info{
+.expertise_info{
     padding-bottom: 100px;
 }
-#expertise_info p{
+.expertise_info p{
     margin-top: 20px;
+}
+.expertise_info a{
+    text-decoration: none;
+    color: #333;
+}
+.expertise_info a:hover{
+    font-weight: 400;
+}
+.expertise_info img{
+    /*width: 225px;*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.expertise_info img:hover{
+    /*width: 250px;*/
+    /*width: 110%;*/
+    border-radius: 0 0 5px 5px;
+    border-top: .6em solid green;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .mapping_adv{
     margin-bottom: 30px;
@@ -429,10 +452,15 @@ footer{
     margin-bottom: 60px;
     line-height: 1.1em;
 }
+.member img{
+    margin-bottom: 20px;
+}
 label{
     font-weight: 400;
 }
-
+strong{
+    font-weight: 400;
+}
 /*For shrinking the menu bar*/
 /*body {
   padding-top: 50px;
