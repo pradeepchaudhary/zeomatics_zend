@@ -138,6 +138,9 @@ a:focus{
     margin: 1em 0 1em;
     /*text-align: center;*/
 }
+.title_font{
+    font-family: "procionoregular", Times New Roman;
+}
 .navbar{
     /*min-height: 40px;*/
     padding-top: 20px;
@@ -419,7 +422,9 @@ footer{
     margin-bottom: 60px;
     line-height: 1.1em;
 }
-
+label{
+    font-weight: 400;
+}
 
 /*For shrinking the menu bar*/
 /*body {

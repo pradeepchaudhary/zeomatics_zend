@@ -22,7 +22,7 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
             </div>
             <a id="go_down" class="skip-icon page_background" title="Skip to content" href="#content"><span class="glyphicon glyphicon-arrow-down"></span></a>
         </div>
-        <img  id="menu-shrink-mark" class="img-rounded img-responsive" src="../img/GIS_Banner_Large.png"/>
+        <img  id="menu-shrink-mark" class="img-rounded img-responsive" src="<?php echo $this->basePath('img/GIS_Banner_Large.png');?>"/>
     </div>
 </div>
 <div class="row">
@@ -86,26 +86,26 @@ $this->headLink()->appendStylesheet($this->basePath('css/jquery.bxslider.css'));
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Full Name:</label>
+                            <label for="name">Full Name:</label>
                             <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Phone Number:</label>
+                            <label for="phone">Phone Number:</label>
                             <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Email Address:</label>
+                            <label for="email">Email Address:</label>
                             <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Message:</label>
+                            <label for="message">Message:</label>
                             <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
                         </div>
                     </div>
