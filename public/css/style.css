@@ -373,8 +373,9 @@ footer{
 .service_info{
     margin-bottom: 60px;
 }
-.services_info a{
+.service_info a{
     margin-bottom: 20px;
+    text-decoration: none;
 }
 .project_title {
     color: #333;
