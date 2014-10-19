@@ -132,6 +132,15 @@
                        scrollTop: target.offset().top
                     }, 1000);
                 });
+                function initialscroll(){
+                    $('html, body').stop().animate({
+                       scrollTop: $('#content').offset().top
+                    }, 3000);
+                }
+                var timer = setTimeout(initialscroll,3000);
+                $(document).on('click', function(){
+                    clearTimeout(timer);
+                })
             });
         </script>
     </body>
